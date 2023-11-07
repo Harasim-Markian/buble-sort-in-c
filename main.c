@@ -9,6 +9,7 @@ int main()
 	{
 		for (int j = 0; j < 5; j++)
 		{
+			printf("\n");
 			printf("Enter the matrix element [%d][%d]: ", i + 1, j + 1);
 			scanf("%d", &matrix[i][j]);
 		}
@@ -69,8 +70,19 @@ int main()
 	printf("\n");
     for (int i = 0; i < 5; i++)
     {
-        printf("Sum in cols %d: %d\n", i, sums[i]);
+        printf("Sum in cols fi(aij) %d: %d\n", i, sums[i]);
     }
-	
+
+	double product = 1.0;
+    for (int i = 0; i < 5; i++) 
+	{
+        product *= sums[i];
+    }
+
+    double geometric_mean = pow(product, 1.0/5); 
+
+    printf("\nGeometric mean for all sums F(fi(aij)): %f\n", geometric_mean);
+	printf("\n");
+
 	return 0;
 }
