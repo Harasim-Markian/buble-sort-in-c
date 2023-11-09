@@ -5,14 +5,15 @@
 int main() 
 {
 	int matrix[5][5];
+	printf("\n");
 	for (int i = 0; i < 5; i++)
 	{
 		for (int j = 0; j < 5; j++)
 		{
-			printf("\n");
 			printf("Enter the matrix element [%d][%d]: ", i + 1, j + 1);
 			scanf("%d", &matrix[i][j]);
 		}
+		printf("\n");
 	}
 	printf("Received matrix (5x5):\n");
 	printf("\n");
@@ -74,13 +75,14 @@ int main()
     }
 
 	double product = 1.0;
-    for (int i = 0; i < 5; i++) 
+    for (int i = 1; i < 5; i++) 
 	{
         product *= sums[i];
     }
 
     double geometric_mean = pow(product, 1.0/5); 
-
+	
+	printf("\n");
     printf("\nGeometric mean for all sums F(fi(aij)): %f\n", geometric_mean);
 	printf("\n");
 
