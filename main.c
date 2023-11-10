@@ -69,6 +69,7 @@ int main()
 
     printf("\nSums below the secondary diagonal:\n");
 	printf("\n");
+	
     for (int i = 0; i < 5; i++)
     {
         printf("Sum in cols fi(aij) %d: %d\n", i, sums[i]);
@@ -85,7 +86,6 @@ int main()
 	printf("\n");
     printf("\nGeometric mean for all sums F(fi(aij)): %f\n", geometric_mean);
 	printf("\n");
-	print("");
 		
 	return 0;
 }
