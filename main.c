@@ -86,5 +86,6 @@ int main()
     printf("\nGeometric mean for all sums F(fi(aij)): %f\n", geometric_mean);
 	printf("\n");
 
+	printf("otenko idi nahyi")
 	return 0;
 }
