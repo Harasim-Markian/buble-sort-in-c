@@ -42,7 +42,6 @@ int main()
 			}
 		}
 	}
-	
 	printf("\nMatrix sorted by rows:\n");
     printf("\n");
 	for (int i = 0; i < 5; i++)
@@ -81,11 +80,10 @@ int main()
         product *= sums[i];
     }
 
-    double geometric_mean = pow(product, 1.0/5); 
+    double geometric_mean = pow(product, 1.0 / 5); 
 	
 	printf("\n");
-    printf("\nGeometric mean for all sums F(fi(aij)): %f\n", geometric_mean);
-	printf("\n");
-		
+    printf("\nGeometric mean for all sums F(fi(aij)): %f \n", geometric_mean);
+	printf("\n");		
 	return 0;
 }
